@@ -16,6 +16,7 @@
 
 package com.example.android.a109590016_HW2;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int mCount = 0;
     private TextView mShowCount;
+    private View zeroButtonView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         mCount = 0;
         if (mShowCount != null)
             mShowCount.setText(Integer.toString(mCount));
+        view.setBackgroundColor(Color.GRAY);
     }
     /*
     * Increments the number in the TextView when the COUNT button is clicked.
@@ -70,5 +73,17 @@ public class MainActivity extends AppCompatActivity {
         mCount++;
         if (mShowCount != null)
             mShowCount.setText(Integer.toString(mCount));
+        if(mCount % 2 == 0){
+            view.setBackgroundColor(Color.BLUE);
+        } else {
+            view.setBackgroundColor(Color.YELLOW);
+        }
+
+        zeroButtonView = (View) findViewById(R.id.button_zero);
+        if(mCount == 0){
+            zeroButtonView.setBackgroundColor(Color.GRAY);
+        }else {
+            zeroButtonView.setBackgroundColor(Color.CYAN);
+        }
     }
 }
