@@ -18,7 +18,7 @@ android {
     }
     android.applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "109590016_HW302.apk"
+            outputFileName = "109590016_HW3.apk"
         }
     }
 }
