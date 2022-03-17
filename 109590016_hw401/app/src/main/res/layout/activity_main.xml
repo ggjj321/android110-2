@@ -37,12 +37,13 @@
         android:id="@+id/editText_main"
         android:layout_width="237dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/backgroup_cursor"
         android:ems="10"
         android:hint=""
         android:inputType="textLongMessage"
+        android:textCursorDrawable="@drawable/color_cursor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        android:textCursorDrawable="@drawable/color_cursor"/>
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
