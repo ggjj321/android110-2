@@ -43,5 +43,6 @@
         android:inputType="textLongMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:textCursorDrawable="@drawable/color_cursor"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
