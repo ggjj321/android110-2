@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <CheckBox
+        android:id="@+id/syrup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundTint="#E91E63"
+        android:text="Chocolate syrup" />
+
+    <CheckBox
+        android:id="@+id/Sprinkles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sprinkles" />
+
+    <CheckBox
+        android:id="@+id/Crushed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crushed nuts" />
+
+    <CheckBox
+        android:id="@+id/Cherries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cherries" />
+
+    <CheckBox
+        android:id="@+id/Oeio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oeio cookie crumbles" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BFBFBF"
+        android:onClick="showToast"
+        android:text="SHOW TOAST"
+        android:textColor="@color/black" />
+</LinearLayout>
