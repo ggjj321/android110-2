@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:rowCount="4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dount"
+        android:layout_width="105dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/donut_circle" />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="105dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/froyo_circle" />
+
+    <ImageView
+        android:id="@+id/icecream"
+        android:layout_width="105dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icecream_circle" />
+
+</GridLayout>

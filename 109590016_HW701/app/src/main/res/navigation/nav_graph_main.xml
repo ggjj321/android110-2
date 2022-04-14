@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/mainActivity">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.a109590016_hw701.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main"
+        />
+    <activity
+        android:id="@+id/dount2"
+        android:name="com.example.a109590016_hw701.dount"
+        android:label="activity_dount"
+        tools:layout="@layout/activity_dount" />
+    <activity
+        android:id="@+id/icecream2"
+        android:name="com.example.a109590016_hw701.icecream"
+        android:label="activity_icecream"
+        tools:layout="@layout/activity_icecream" />
+    <activity
+        android:id="@+id/froyo2"
+        android:name="com.example.a109590016_hw701.froyo"
+        android:label="activity_froyo"
+        tools:layout="@layout/activity_froyo" />
+</navigation>
