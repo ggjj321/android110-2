@@ -11,6 +11,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
@@ -75,21 +76,40 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void deliverNotification(Context context) {
-        Intent contentIntent = new Intent(context, MainActivity.class);
-        contentIntent.setAction("CLOCK_IN");
-        AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
-        Calendar calendarSet = Calendar.getInstance();
-        calendarSet.set(Calendar.HOUR_OF_DAY, 16);
-        calendarSet.set(Calendar.MINUTE, 9);
-        calendarSet.set(Calendar.SECOND, 0);
-        calendarSet.set(Calendar.MILLISECOND, 0);
-
         Calendar calendarNow = Calendar.getInstance();
         calendarNow.setTimeInMillis(System.currentTimeMillis());
 
-        long alarmSeconds = calendarSet.getTimeInMillis() - System.currentTimeMillis() ;
+        int setHour = 11;
+        int setMinute = 11;
+
+        int nowHour = calendarNow.get(Calendar.HOUR_OF_DAY);
+        int nowMinute = calendarNow.get(Calendar.MINUTE);
+
+        if(nowHour > setHour || ((nowHour == setHour) && (nowMinute == setMinute))){
+            setHour += 24;
+        }
+
+        Calendar calendarSet = Calendar.getInstance();
+        calendarSet.set(Calendar.HOUR_OF_DAY, setHour);
+        calendarSet.set(Calendar.MINUTE, setMinute);
+        calendarSet.set(Calendar.SECOND, 0);
+        calendarSet.set(Calendar.MILLISECOND, 0);
+
+        Intent contentIntent = new Intent(context, AlarmBroadcastReceiver.class);
+        contentIntent.setAction("CLOCK_IN");
+        AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
+
         PendingIntent contentPendingIntent = PendingIntent.getBroadcast(this, 0, contentIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmSeconds, contentPendingIntent);
+
+        long alarmSeconds = calendarSet.getTimeInMillis() - System.currentTimeMillis();
+
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + alarmSeconds, contentPendingIntent);
+        } else {
+            alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + alarmSeconds, contentPendingIntent);
+        }
     }
 }
 
