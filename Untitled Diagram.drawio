@@ -1,1 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2022-06-09T07:45:51.320Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="18.0.7" etag="c7nv7hJ5l-AqthWZfI3D" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7VhZc9MwEP41Hp5gfBQnecRp0wKhU2ihw6NiK7aI7DWynINfzyqWYzsOOYD0yDQv0a43K2m/b4/YcPrx/FKQNPoEAeWGbQZzwzk3bNuybQe/lGZRaLq9bqEIBQu0UaW4Zb+oVppam7OAZg1DCcAlS5tKH5KE+rKhI0LArGk2Bt7cNSUhbSlufcLb2nsWyEjfwu5U+ivKwqjc2XJ7xZOYlMb6JllEApjVVM6F4fQFgCxW8bxPuQpeGZf794t7Ppy4lx8+Zz/JV+/j3fW314WzwSE/WV1B0ET+X9d24XpKeK7jpe8qF2UABeRJQJUT03C8SMYclxYuf1ApFxpwkktAFQgZQQgJ4UOAVNuNIZHazFIyTYJ3CliURxz8SaEaMM71Hihp+y5KmRQwWWGnHKyAUMacjCj3iD8JlwftAweBjxJIqHIVIBn0XarDXVRab8/YagwyyIVPt9jpbJFEhHSbP7ewU+er8VQjd0khplIs0EBQTiSbNslMdE6EK7sKd1xo6A+ggdOiwZDEqcp6oFnySuJqBmKyhRsKl1nEJL1NyTJAMywnTb7UeYBX9UJOskyjuAPkw0CaUiHpfGtYy6euzu2yuGlxVlUKq0z/qFYlzswjAXHWAuI7Fs+XlPyXlHT3TMmyY+3MSU2Wkhh7p6j2dAMskTUTGI8zPNg6dVYb/j2b3rbYdA0tMu3G41nT7ZHI1DmMS9aT55L7hxbhcgyDNxK4CtUq5XkYIlnQXWI4g3btiiAe5dnudtHAWDFoQGLGVbyuKJ9SyXyyoakQzkLc99xHuKnYTB7ckiUhSm4l3S3JivX3iM2m02w2K7nebcwN3aZ7rG7TaWF6g+gV0NkmX+J7Yh3fsddA6D12y+/uU6SfdQl+8I5fVtPdLd/as0xr9phvHPw0CPT0p4DeXjPlyxhwHIbZpzYIlCes8cnL+ag9CYxykSwHAcjlyySwbRKwNzWhB50EykJYA/ULTQlDMM3hKc4B6//8z5zHngPKStGEgKuY2maRYSeGwfos5ljHwwDF6k1tUQqr993OxW8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-09T07:53:21.708Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Tgd_Elr1lbdsaTGM2Sc4" version="18.0.7" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="690" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WwHvs80juvkHAxnWsmZ6-0" value="通知出現" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="110" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WwHvs80juvkHAxnWsmZ6-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="134.66" as="sourcePoint" />
+            <mxPoint x="440" y="134.66" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WwHvs80juvkHAxnWsmZ6-3" value="" style="swimlane;startSize=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="40" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WwHvs80juvkHAxnWsmZ6-4" value="&lt;a data-darkreader-inline-color=&quot;&quot; data-darkreader-inline-boxshadow=&quot;&quot; data-darkreader-inline-outline=&quot;&quot; data-darkreader-inline-bgcolor=&quot;&quot; style=&quot;box-sizing: border-box; background-color: rgb(10, 14, 18); transition: color 80ms cubic-bezier(0.33, 1, 0.68, 1) 0s, background-color 0s ease 0s, box-shadow 0s ease 0s, border-color 0s ease 0s; outline: none; outline-offset: -2px; box-shadow: none; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-size: 14px; text-align: start; color: var(--darkreader-text--color-accent-fg)  !important; --darkreader-inline-bgcolor:#080b0e; --darkreader-inline-outline: initial; --darkreader-inline-boxshadow:none; --darkreader-inline-color:var(--darkreader-text--darkreader-text--color-accent-fg);&quot; href=&quot;https://github.com/evan901010/NTUT_Android-Development_110-2/blob/main/app/src/main/java/com/example/afinal/service/NotificationMangerService.java&quot; data-pjax=&quot;#repo-content-pjax-container&quot; title=&quot;NotificationMangerService.java&quot; class=&quot;js-navigation-open Link--primary&quot;&gt;NotificationMangerService&lt;/a&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WwHvs80juvkHAxnWsmZ6-3">
+          <mxGeometry x="60" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
